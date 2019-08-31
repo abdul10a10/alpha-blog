@@ -1,0 +1,11 @@
+<%= render 'layouts/messages' %>
+<%= form_for @article do |k| %>
+  <%= k.label :title %><br>
+  <%= k.text_field :title %><br><br>
+  <%= k.label :description %><br>
+  <%= k.text_field :description %><br><br>
+  <%= k.submit %>
+<% end %>
+<p>
+  <%= link_to "Back to article page", articles_path %>
+</p>

@@ -1,8 +1,2 @@
 <h2>create an article</h2>
-<%= form_for @article do |k| %>
-  <%= k.label :title %>
-  <%= k.text_field :title %><br><br>
-  <%= k.label :description %>
-  <%= k.text_field :description %><br><br>
-  <%= k.submit %>
-<% end %>
+<%= render 'form' %>
